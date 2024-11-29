@@ -1,1 +1,1 @@
-# Soptify-Clone-Full-Stack
+# Spotify-Clone-Full-Stack
