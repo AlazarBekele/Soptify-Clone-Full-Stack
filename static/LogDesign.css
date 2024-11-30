@@ -28,6 +28,11 @@ body {
 .socialMediaBorder {
   width: 300px;
   border: 2px solid white;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  text-align: center;
+  padding: 10px 15px 8px 15px;
+  border-radius: 25px;
 }
 .SocialImg {
   width: 20px;
