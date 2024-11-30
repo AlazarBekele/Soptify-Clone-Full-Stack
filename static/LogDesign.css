@@ -21,10 +21,8 @@ body {
   border: none;
   border-radius: 1px;
   background-color: rgb(91, 91, 91);
-  width: 300px;
+  width: 250px;
   height: 40px;
-}
-.LogInput::placeholder {
   padding-left: 10px;
   color: white;
 }
