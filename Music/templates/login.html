@@ -57,8 +57,14 @@
   
           <div class="d-flex flex-column justify-content-center align-items-center">
   
-            <input class="LogInput poppins-bold mb-3" placeholder="Enter Your Email" type="text">
-            <input class="LogInput poppins-bold" placeholder="Password" type="text">
+            <!-- <input class="LogInput poppins-bold mb-3" placeholder="Enter Your Email" type="text">
+            <input class="LogInput poppins-bold" placeholder="Password" type="text"> -->
+            <form method="post">
+
+              {% csrf_token %}
+              {{ form.as_p }}
+
+            </form>
   
           </div>
   
