@@ -1,14 +1,18 @@
 body {
-  background-image: url(https://img.freepik.com/free-photo/planet-earth-listening-music_1048-2600.jpg?t=st=1732901731~exp=1732905331~hmac=eacd62849dfc0d76b6aff7a9768a424381dd9f2d35a71ece14c9981323fa177f&w=900);
+  background-image: url(https://img.freepik.com/free-photo/planet-earth-listening-music_1048-2600.jpg?t=st=1732968455~exp=1732972055~hmac=af3515e7bacc822a204cf0669069571432bd6d727cb360828a4e17f2a8806466&w=900);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
 }
+.MainBackgroundImgContainer {
+  background-color: rgb( 0, 0, 0, 0.8);
+  height: 100vh;
+}
 .LogContain {
-  background-color: black;
-  width: 550px;
+  background-color: rgb(22, 22, 22);
+  width: 500px;
 }
 .LogLogo {
   width: 30px;
@@ -19,6 +23,10 @@ body {
   background-color: rgb(91, 91, 91);
   width: 300px;
   height: 40px;
+}
+.LogInput::placeholder {
+  padding-left: 10px;
+  color: white;
 }
 .LoginBtn {
   width: 300px;
