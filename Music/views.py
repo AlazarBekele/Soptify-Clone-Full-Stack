@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import LogInput, Login_check
 from django.contrib.auth import login, authenticate, logout
+from django.contrib import messages
 
 # Create your views here.
 
@@ -30,3 +31,16 @@ def login_Page (request):
   }
   
   return render (request, 'login.html', context)
+
+
+def sign_up (request):
+
+  form = LogInput (request.POST or None)
+  if request.method == 'POST':
+    if form.is_valid():
+      
+      messages.success(request, 'Successfully Register !!')
+      form.save()
+      return redirect ('login_Page')
+
+  return render (request, 'Sign_up.html')
