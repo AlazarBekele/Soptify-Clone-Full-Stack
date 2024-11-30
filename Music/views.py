@@ -33,14 +33,24 @@ def login_Page (request):
   return render (request, 'login.html', context)
 
 
+def login_Page (request):
+  logout (request)
+  return redirect ('login_Page')
+
+
 def sign_up (request):
 
-  form = LogInput (request.POST or None)
+  sign = LogInput (request.POST or None)
   if request.method == 'POST':
-    if form.is_valid():
-      
-      messages.success(request, 'Successfully Register !!')
-      form.save()
-      return redirect ('login_Page')
+    if sign.is_valid():
 
-  return render (request, 'Sign_up.html')
+      messages.success(request, 'Successfully Register !!')
+      sign.save()
+      return redirect ('login_Page')
+    
+
+  context = {
+    'sign' : sign
+  }
+
+  return render (request, 'Sign_up.html', context=context)

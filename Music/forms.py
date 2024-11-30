@@ -7,34 +7,39 @@ from django.contrib.auth.models import User
 class LogInput (UserCreationForm):
       
       first_name = forms.CharField (max_length=30, widget = forms.TextInput(attrs={
-         'class' : 'LogInput',
+         'class' : 'form-control',
          'placeholder' : 'First Name',
          'autocomplate' : 'off'
       }))
       last_name = forms.CharField (max_length=30, widget = forms.TextInput(attrs={
-         'class' : 'LogInput',
+         'class' : 'form-control',
          'placeholder' : 'last Name',
          'autocomplate' : 'off'
       }))
-      Email = forms.EmailField (widget = forms.EmailInput(attrs={
-         'class' : 'LogInput',
+      username = forms.CharField (widget = forms.TextInput(attrs={
+         'class' : 'form-control',
+         'placeholder' : 'Enter username',
+         'autocomplate' : 'off'
+      }))
+      Email_Part= forms.EmailField (widget = forms.EmailInput(attrs={
+         'class' : 'form-control',
          'placeholder' : 'Enter Email',
          'autocomplate' : 'off'
       }))
-      password1 = forms.CharField (max_length=8, widget = forms.PasswordInput(attrs={
-         'class' : 'LogInput',
+      password1 = forms.CharField (max_length=40, label='password', widget = forms.PasswordInput(attrs={
+         'class' : 'form-control',
          'placeholder' : 'Enter Password1',
-         'autocomplate' : 'off'
+         'autocomplete': 'off'
       }))
-      password2 = forms.CharField (max_length=8, widget = forms.PasswordInput(attrs={
-         'class' : 'LogInput',
-         'placeholder' : 'Enter Password2',
-         'autocomplate' : 'off'
+      password2 = forms.CharField( max_length=40, label='Confirm Password', widget=forms.PasswordInput(attrs={
+          'class' : 'form-control',
+          'placeholder' : 'Confirm Password',
+          'autocomplete': 'off'
       }))
       
       class Meta:
           model = User
-          fields = ('first_name', 'last_name', 'Email', 'password1', 'password2')
+          fields = ('first_name', 'last_name', 'username', 'Email_Part', 'password1', 'password2')
 
     # class Meta:
 
