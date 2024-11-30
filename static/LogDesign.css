@@ -4,10 +4,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 .LogContain {
   background-color: black;
+  width: 550px;
 }
 .LogLogo {
   width: 30px;
+}
+.LogInput {
+  border: none;
+  border-radius: 1px;
+  background-color: rgb(91, 91, 91);
+  width: 300px;
+  height: 40px;
 }
