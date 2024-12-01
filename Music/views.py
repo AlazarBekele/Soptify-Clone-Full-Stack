@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect
 from .forms import LogInput, Login_check
 from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 # Create your views here.
 
+@login_required (login_url='/login/')
 def index (request):
 
   return render (request, 'index.html')
