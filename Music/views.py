@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import LogSecInput, Login_check
+from .forms import LogInput, Login_check
 from django.contrib.auth import login, authenticate, logout
 from django.contrib import messages
 
@@ -40,7 +40,7 @@ def login_Page (request):
 
 def sign_up (request):
 
-  sign = LogSecInput (request.POST or None)
+  sign = LogInput (request.POST or None)
   if request.method == 'POST':
     if sign.is_valid():
 
