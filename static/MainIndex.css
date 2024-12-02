@@ -56,3 +56,13 @@
   margin-bottom: 0;
   padding-left: 10px;
 }
+.flexPosition {
+  display: grid;
+  grid-template-columns: 90px 300px;
+}
+.CardBackground {
+  background-color: rgba(110, 110, 110, 0.7);
+}
+.CardTextColor {
+  color: rgb(154, 154, 154);
+}
