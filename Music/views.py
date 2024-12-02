@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import LogInput, Login_check
+from .forms import LogInput, Login_check, postInput
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -69,4 +69,19 @@ def sign_up (request):
 
 def post_page (request):
 
-  return render (request, 'post_music.html')
+  postPage = postInput (request.POST or None)
+
+  if request.method == 'POST':
+    if postPage.is_valid():
+
+      postPage.save()
+      postPage = postInput()
+
+  apply = Post_Music.objects.all()
+
+  context = {
+    'apply' : apply,
+    'postPage' : postPage
+  }
+
+  return render (request, 'post_music.html', context=context)

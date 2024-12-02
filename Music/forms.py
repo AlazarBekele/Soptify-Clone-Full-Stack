@@ -96,3 +96,30 @@ class Login_check (forms.Form):
     'class' : 'LogInput poppins-bold',
     'placeholder' : 'Password'
   }))
+
+
+class postInput (forms.ModelForm):
+    class Meta:
+        
+        model = Post_Music
+        fields = '__all__'
+
+        widgets = {
+            'artist_Image' : forms.ClearableFileInput(attrs={
+                'class' : 'form-control bg-secondary',
+                'type' : 'file'
+            }),
+            'Music_Title' : forms.TextInput(attrs={
+                'class' : 'form-control bg-secondary'
+            }),
+            'artist' : forms.TextInput(attrs={
+                'class' : 'form-control bg-secondary'
+            }),
+            'colaborators' : forms.TextInput(attrs={
+                'class' : 'form-control bg-secondary'
+            }),
+            'release_date' : forms.DateInput(attrs={
+                'class' : 'form-control bg-secondary',
+                'type' : 'Date'
+            })
+        }
