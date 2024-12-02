@@ -2,6 +2,14 @@
   filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
   width: 30px;
 }
+.Posticon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
+  width: 40px;
+}
+.Posticon:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(67%) saturate(6138%) hue-rotate(359deg) brightness(99%) contrast(104%);
+  transition: 0.5s;
+}
 .BackgroundImg {
   background-color: rgb(29, 29, 29);
 }
