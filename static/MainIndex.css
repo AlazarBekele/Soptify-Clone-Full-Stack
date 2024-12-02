@@ -46,3 +46,13 @@
   background-color: blue;
   height: 50px;
 }
+
+
+.thumbImg {
+  width: 90px;
+  height: 90px;
+}
+.thumbText {
+  margin-bottom: 0;
+  padding-left: 10px;
+}

@@ -3,13 +3,22 @@ from .forms import LogInput, Login_check
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from .models import Post_Music, Catagory
 
 # Create your views here.
+
 
 @login_required (login_url='/login/')
 def index (request):
 
-  return render (request, 'index.html')
+  post_music = Post_Music.objects.all()
+
+  context = {
+    'post_music' : post_music
+  }
+
+  return render (request, 'index.html', context=context)
+
 
 
 def login_Page (request):
