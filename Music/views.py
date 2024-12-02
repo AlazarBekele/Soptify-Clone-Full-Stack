@@ -67,6 +67,7 @@ def sign_up (request):
   return render (request, 'Sign_up.html', context=context)
 
 
+@login_required (login_url='/login/')
 def post_page (request):
 
   postPage = postInput (request.POST or None)
