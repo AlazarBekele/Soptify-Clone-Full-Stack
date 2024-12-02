@@ -12,6 +12,7 @@
   left: 0;
   top: 0;
   height: 100vh;
+  overflow: hidden;
 }
 .shodow {
   box-shadow: 0, 0, 0, gray;
@@ -20,4 +21,18 @@
 .shodow:hover {
   background-color: gray;
   transition: 0.5s;
+}
+.createImg {
+  width: 70px;
+}
+.createImg1 {
+  width: 65px;
+}
+.textcreate {
+  font-size: 15px;
+  font-family: "Parkinsans", sans-serif;
+}
+.textcreate:hover {
+  font-weight: 700;
+  transition: 0.2s;
 }

@@ -29,7 +29,7 @@
 
   <div class="containerImg d-flex justify-content-center align-items-center" >
 
-    <div class="SignContainer d-flex flex-column justify-content-center align-items-center">
+    <div class="SignContainer d-flex flex-column rounded-3 justify-content-center align-items-center">
 
       <div class="mt-4 mb-3">
 
@@ -42,7 +42,8 @@
         {% csrf_token %}
         {{ sign.as_p }}
 
-        <button class="LoginBtn poppins-bold pt-2 pb-2 rounded-pill mt-3 mb-5" type="submit" >Sign Up</button>
+        <button class="LoginBtn poppins-bold pt-2 pb-2 mt-3 rounded-pill" type="submit" >Sign Up</button>
+        <a class="d-flex justify-content-center align-items-center mt-4 text-center mb-5" href="{% url 'login' %}">back to login</a>
 
       </form>
 
