@@ -58,11 +58,23 @@
 }
 .flexPosition {
   display: grid;
-  grid-template-columns: 90px 300px;
+  grid-template-columns: 90px 230px 70px;
 }
 .CardBackground {
   background-color: rgba(110, 110, 110, 0.7);
 }
 .CardTextColor {
   color: rgb(154, 154, 154);
+}
+.playBtn {
+  width: 50px;
+  opacity: 0;
+}
+.flexPosition:hover .playBtn {
+  opacity: 1;
+  transition: 0.3s;
+}
+.resonse {
+  display: grid;
+  grid-template-columns: 390px 390px;
 }

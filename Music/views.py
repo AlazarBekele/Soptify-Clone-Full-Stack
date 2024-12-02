@@ -65,3 +65,8 @@ def sign_up (request):
   }
 
   return render (request, 'Sign_up.html', context=context)
+
+
+def post_page (request):
+
+  return render (request, 'post_music.html')
