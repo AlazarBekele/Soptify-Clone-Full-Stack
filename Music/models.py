@@ -29,3 +29,11 @@ class Post_Music (models.Model):
 
   def __str__(self) -> str:
     return self.artist
+  
+class Spicalkey (models.Model):
+
+  title = models.CharField (max_length=30)
+  loginKey = models.IntegerField ()
+
+  def __str__(self) -> str:
+    return self.title
