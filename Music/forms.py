@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post_Music, Login_Data
+from .models import Post_Music, Login_Data, Spicalkey
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
@@ -123,3 +123,20 @@ class postInput (forms.ModelForm):
                 'id' : 'formFileMultiple'
             }),
         }
+
+
+# class specialKey (forms.ModelForm):
+    
+#     class Meta:
+        
+#         model = Spicalkey
+#         fields = '__all__'
+
+#         widgets = {
+            
+#           'Spicalkey' : forms.NumberInput(attrs={
+#               'class' : 'form-control',
+#               'placeholder' : 'Spical key'
+#           })
+
+#         }

@@ -3,7 +3,7 @@ from .forms import LogInput, Login_check, postInput
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import Post_Music, Catagory
+from .models import Post_Music, Catagory, Spicalkey
 
 # Create your views here.
 
@@ -90,5 +90,21 @@ def post_page (request):
 
 def payment (request):
 
+  # pay = specialKey (request.POST or None)
+
+  # if request.method == 'POST':
+  #   if pay.is_valid():
+  #     if pay == '12345':
+
+  #       return redirect ('index')
+        # form.save()
+        # form = specialKey ()
+
+  # deploy = Spicalkey.objects.all()
   
+  # context = {
+  #   'pay' : pay,
+  #   'deploy' : deploy
+  # }
+
   return render (request, 'post_pay.html')
