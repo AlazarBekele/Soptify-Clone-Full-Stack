@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Post Pay</title>
+
+    <!-- X icon -->
+     <link rel="shortcut icon" type="x-icon" href="https://img.icons8.com/?size=100&id=Tys9Kx3DE6tD&format=png&color=000000">
 
     <!-- CSS link -->
      <link rel="stylesheet" href="{% static 'post_pay.css' %}">
@@ -28,10 +32,34 @@
 
 <body>
 
-  <div class="MainBackgroundImgContainer">
+  <div class="MainBackgroundImgContainer d-flex justify-content-center align-items-center">
 
     <div>
-      <h1>Hello Payment</h1>
+
+      <img class="payImg" src="{% static 'Img/payment.png' %}" alt="">
+
+    </div>
+
+    <div>
+
+      <div>
+
+        <h2 class="text-center text-light mb-4">Payment Method</h2>
+
+        <input class="form-control p-3" placeholder="1234 5678 6789 1234" type="text">
+
+        <div class="d-flex gap-2 mt-2">
+
+          <input class="form-control p-3" placeholder="MM/YY" type="text">
+
+          <input class="form-control p-3" placeholder="CVV" type="text">
+
+        </div>
+
+        <button class="btn btn-success container mt-2">Pay</button>
+
+      </div>
+
     </div>
 
   </div>
