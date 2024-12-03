@@ -34,10 +34,12 @@
 
       <form method="post">
 
+        <h2 class="poppins-bold text-light mt-2 mb-3 text-center">Post Page</h2>
+
         {% csrf_token %}
         {{ postPage.as_p }}
 
-        <div class="d-flex justify-content-center align-items-center gap-2">
+        <div class="d-flex justify-content-center align-items-center mt-2 gap-2">
 
           <a class="btn btn-dark poppins-bold" href="{% url 'index' %}">CANCLE</a>
           <button class="btn btn-dark poppins-bold" type="submit">POST</button>

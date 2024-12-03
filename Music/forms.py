@@ -105,21 +105,28 @@ class postInput (forms.ModelForm):
         fields = '__all__'
 
         widgets = {
-            'artist_music' : forms.ClearableFileInput(attrs={
-                'class' : 'form-control bg-secondary',
-                'type' : 'file'
+            'music' : forms.FileInput(attrs={
+                'class' : 'form-control bg-secondary text-light parkinsans',
+                'type' : 'file',
+                'id' : 'formFileMultiple'
             }),
             'Music_Title' : forms.TextInput(attrs={
-                'class' : 'form-control bg-secondary'
+                'class' : 'form-control bg-secondary text-light parkinsans'
             }),
             'artist' : forms.TextInput(attrs={
-                'class' : 'form-control bg-secondary'
+                'class' : 'form-control bg-secondary text-light parkinsans',
+                'placeholder' : 'Name Artist'
+            }),
+            'cover_picture' : forms.ClearableFileInput(attrs={
+                'class' : 'form-control bg-secondary text-light parkinsans',
+                'type' : 'file'
             }),
             'colaborators' : forms.TextInput(attrs={
-                'class' : 'form-control bg-secondary'
+                'class' : 'form-control bg-secondary text-light parkinsans',
+                'placeholder' : 'Name Artists'
             }),
             'release_date' : forms.DateInput(attrs={
-                'class' : 'form-control bg-secondary',
+                'class' : 'form-control bg-secondary text-light parkinsans',
                 'type' : 'Date'
             })
         }
