@@ -86,3 +86,8 @@ def post_page (request):
   }
 
   return render (request, 'post_music.html', context=context)
+
+
+def payment (request):
+
+  return render (request, 'post_pay.html')
