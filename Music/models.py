@@ -26,6 +26,7 @@ class Post_Music (models.Model):
   artist = models.CharField (max_length=30)
   colaborators = models.CharField (max_length=150, null=True, blank=True)
   release_date = models.DateField (null=False, blank=False, auto_created=True, auto_now_add=True)
+  cover_picture = models.ImageField (upload_to='Music_Background/',null=True, blank=True)
 
   def __str__(self) -> str:
     return self.artist

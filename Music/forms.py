@@ -105,7 +105,7 @@ class postInput (forms.ModelForm):
         fields = '__all__'
 
         widgets = {
-            'artist_Image' : forms.ClearableFileInput(attrs={
+            'artist_music' : forms.ClearableFileInput(attrs={
                 'class' : 'form-control bg-secondary',
                 'type' : 'file'
             }),
