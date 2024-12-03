@@ -90,4 +90,5 @@ def post_page (request):
 
 def payment (request):
 
+  
   return render (request, 'post_pay.html')
