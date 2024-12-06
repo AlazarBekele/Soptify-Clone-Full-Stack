@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post_Music, Login_Data, Spicalkey
+from .models import Post_Music, Login_Data
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
@@ -40,11 +40,7 @@ class LogInput (UserCreationForm):
       class Meta:
           model = User
           fields = ('first_name', 'last_name', 'username', 'Email_Part', 'password1', 'password2')
-
-    # class Meta:
-
-    #   model = Login_Data
-    #   fields = 'first_name', 'last_name'
+          
 
 
 class LogSecInput (UserCreationForm):      
@@ -88,17 +84,22 @@ class LogSecInput (UserCreationForm):
 class Login_check (forms.Form):
 
   username = forms.CharField (widget = forms.TextInput(attrs={
+      
     'class' : 'LogInput poppins-bold',
     'placeholder' : 'Enter Your Email'
-    ''
+
   }))
+
   password = forms.CharField (widget = forms.TextInput(attrs={
+      
     'class' : 'LogInput poppins-bold',
     'placeholder' : 'Password'
+
   }))
 
 
 class postInput (forms.ModelForm):
+    
     class Meta:
         
         model = Post_Music
@@ -123,20 +124,3 @@ class postInput (forms.ModelForm):
                 'id' : 'formFileMultiple'
             }),
         }
-
-
-# class specialKey (forms.ModelForm):
-    
-#     class Meta:
-        
-#         model = Spicalkey
-#         fields = '__all__'
-
-#         widgets = {
-            
-#           'Spicalkey' : forms.NumberInput(attrs={
-#               'class' : 'form-control',
-#               'placeholder' : 'Spical key'
-#           })
-
-#         }

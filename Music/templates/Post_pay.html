@@ -1,5 +1,8 @@
 {% load static %}
+
 <!DOCTYPE html>
+
+
 <html lang="en">
 
 
@@ -9,16 +12,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Web Name -->
   <title>Post Pay</title>
+
 
     <!-- X icon -->
      <link rel="shortcut icon" type="x-icon" href="https://img.icons8.com/?size=100&id=Tys9Kx3DE6tD&format=png&color=000000">
 
+
     <!-- CSS link -->
      <link rel="stylesheet" href="{% static 'post_pay.css' %}">
 
+
     <!-- Font link -->
     <link rel="stylesheet" href="{% static 'Font.css' %}">
+
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -32,7 +40,9 @@
 
 <body>
 
+
   <div class="MainBackgroundImgContainer d-flex justify-content-center align-items-center">
+
 
     <div>
 
@@ -40,13 +50,17 @@
 
     </div>
 
+
     <div>
 
+
       <div>
+
 
         <h2 class="text-center text-light mb-4">Payment Method</h2>
 
         <input class="form-control p-3" placeholder="1234 5678 6789 1234" id="codeNum" value="12345" type="text">
+
 
         <div class="d-flex gap-2 mt-2">
 
@@ -56,19 +70,26 @@
 
         </div>
 
+
         <div>
 
           <input class="form-control p-3 mt-2" placeholder="Special Key" type="text">
 
         </div>
 
+
         <a href="{% url 'post_page' %}"><button class="btn btn-success container mt-2">Pay</button></a>
+
 
       </div>
 
+
     </div>
 
+
   </div>
+  
+
   
 </body>
 </html>

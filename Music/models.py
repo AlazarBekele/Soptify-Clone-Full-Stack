@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Catagory (models.Model):
 
   Title = models.CharField (max_length=30)
@@ -9,6 +10,7 @@ class Catagory (models.Model):
   def __str__(self) -> str:
     return self.Title
   
+
 
 class Login_Data (models.Model):
 
@@ -18,6 +20,7 @@ class Login_Data (models.Model):
   def __str__(self) -> str:
     return self.first_name + self.last_name
   
+
 
 class Post_Music (models.Model):
 
@@ -29,7 +32,8 @@ class Post_Music (models.Model):
 
   def __str__(self) -> str:
     return self.artist
-  
+
+
   
 class Spicalkey (models.Model):
 

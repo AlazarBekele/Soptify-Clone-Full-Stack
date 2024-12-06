@@ -1,36 +1,49 @@
 {% load static %}
+
 <!DOCTYPE html>
 
 <html lang="en">
 
+
   <head>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Web Name -->
     <title>Login Page</title>
+
   
-  <!-- Static Link -->
+    <!-- Static Link -->
     <link rel="stylesheet" href="{% static 'LogDesign.css' %}">
     <link rel="stylesheet" href="{% static 'Font.css' %}">
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- Font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   
+
   </head>
+
 
 <body>
 
+
+
   <div class="MainBackgroundImgContainer">
 
+
     <div class="d-flex flex-column justify-content-center align-items-center">
+
 
       <div class="LogContain rounded-3 d-flex flex-column justify-content-center align-items-center mt-4">
   
@@ -55,14 +68,18 @@
   
         <div class="d-flex flex-column">
   
+
           <div class="d-flex flex-column justify-content-center align-items-center">
   
             <!-- <input class="LogInput poppins-bold mb-3" placeholder="Enter Your Email" type="text">
             <input class="LogInput poppins-bold" placeholder="Password" type="text"> -->
+
             <form method="post">
+
 
               {% csrf_token %}
               {{ form.as_p }}
+
 
               <div class="d-flex flex-column justify-content-between">
 
@@ -84,12 +101,16 @@
                     <button class="LoginBtn poppins-bold pt-2 pb-2 rounded-pill" type="submit">LOG IN</button>
             
                   </div>
+
           
               </div>
 
+
             </form>
+
             
           </div>
+
   
         </div>
   
@@ -103,16 +124,21 @@
           <h4 class="">-------------</h4>
   
         </div>
+
   
         <div class="">
+
   
           <div class="socialMediaBorder mb-2">
+
   
             <img class="SocialImg" src="{% static 'Img/Social media/Facebook.png' %}" alt="">
   
             <h6 class="text-light">Continue With Facebook</h6>
             
+
           </div>
+
   
           <div class="socialMediaBorder mb-2">
   
@@ -121,6 +147,7 @@
             <h6 class="text-light">Continue With Google</h6>
             
           </div>
+
   
           <div class="socialMediaBorder mb-2">
   
@@ -129,6 +156,7 @@
             <h6 class="text-light">Continue With Apple</h6>
             
           </div>
+
   
         </div>
   
@@ -139,18 +167,24 @@
           <a href="{% url 'sign_up' %}" class="text-light">SIGNUP</a>
   
         </div>
+
   
         <div class="text-center text-light mt-2">
   
           <p class="poppins-bold">SETTING</p>
           
         </div>
+
   
       </div>
+
   
     </div>
 
+
   </div>
+
+  
   
 </body>
 </html>

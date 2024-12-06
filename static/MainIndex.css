@@ -2,17 +2,25 @@
   filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
   width: 30px;
 }
+
+
 .Posticon {
   filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
   width: 40px;
 }
+
+
 .Posticon:hover {
   filter: brightness(0) saturate(100%) invert(72%) sepia(67%) saturate(6138%) hue-rotate(359deg) brightness(99%) contrast(104%);
   transition: 0.5s;
 }
+
+
 .BackgroundImg {
   background-color: rgb(29, 29, 29);
 }
+
+
 .SideBar {
   background-color: black;
   width: 250px;
@@ -22,33 +30,48 @@
   height: 100vh;
   overflow: hidden;
 }
+
+
 .shodow {
   box-shadow: 0, 0, 0, gray;
 
 }
+
+
 .shodow:hover {
   background-color: gray;
   transition: 0.5s;
 }
+
+
 .createImg {
   width: 70px;
 }
+
+
 .createImg1 {
   width: 65px;
 }
+
+
 .textcreate {
   font-size: 15px;
   font-family: "Parkinsans", sans-serif;
 }
+
+
 .textcreate:hover {
   font-weight: 700;
   transition: 0.2s;
 }
 
+
 .MainBody {
   background: rgb(2,0,36);
   background: linear-gradient(169deg, rgba(2,0,36,1) 0%, rgba(4,3,90,1) 49%, rgba(5,5,252,1) 100%);
 }
+
+
 .Footer {
   width: 100%;
   background-color: blue;
@@ -60,28 +83,42 @@
   width: 90px;
   height: 90px;
 }
+
+
 .thumbText {
   margin-bottom: 0;
   padding-left: 10px;
 }
+
+
 .flexPosition {
   display: grid;
   grid-template-columns: 90px 230px 70px;
 }
+
+
 .CardBackground {
   background-color: rgba(110, 110, 110, 0.7);
 }
+
+
 .CardTextColor {
   color: rgb(154, 154, 154);
 }
+
+
 .playBtn {
   width: 50px;
   opacity: 0;
 }
+
+
 .flexPosition:hover .playBtn {
   opacity: 1;
   transition: 0.3s;
 }
+
+
 .resonse {
   display: grid;
   grid-template-columns: 390px 390px;

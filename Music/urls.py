@@ -1,5 +1,11 @@
 from django.urls import path
-from .views import index, login_Page, sign_up, post_page, payment
+from .views import (
+  index,
+  login_Page,
+  sign_up,
+  post_page,
+  payment
+)
 
 
 urlpatterns = [

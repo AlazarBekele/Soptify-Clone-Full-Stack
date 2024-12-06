@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from .forms import LogInput, Login_check, postInput
-from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth import (
+  login, authenticate, logout
+)
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import Post_Music, Catagory, Spicalkey
+from .models import Post_Music
 
 # Create your views here.
 
