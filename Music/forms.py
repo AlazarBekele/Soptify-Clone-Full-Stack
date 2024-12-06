@@ -116,7 +116,8 @@ class postInput (forms.ModelForm):
             }),
             'cover_picture' : forms.ClearableFileInput(attrs={
                 'class' : 'form-control bg-secondary text-light parkinsans',
-                'type' : 'file'
+                'type' : 'file',
+                'id' : 'formFileMultiple'
             }),
             'music' : forms.FileInput(attrs={
                 'class' : 'form-control bg-secondary text-light parkinsans',

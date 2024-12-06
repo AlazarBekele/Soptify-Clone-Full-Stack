@@ -187,13 +187,13 @@
 
               <div class="flexPosition">
 
-                <img class="thumbImg" src="{{  }}" alt="">
+                <img class="thumbImg" src="{{ post_musics.cover_picture }}" alt="">
 
 
                 <div class="">
   
-                  <h2 class="thumbText edu-au-vic-wa-nt-arrows pt-2 text-light">title</h2>
-                  <p class="thumbText roboto-light CardTextColor">Name</p>
+                  <h3 class="thumbText edu-au-vic-wa-nt-arrows pt-2 text-light">{{ post_musics.Music_Title }}</h3>
+                  <p class="thumbText roboto-light CardTextColor">{{ post_musics.artist }}</p>
     
                 </div>
 
@@ -207,7 +207,7 @@
 
               </div>
 
-              {% {% endfor %} %}
+              {% endfor %}
 
             </div>
 
