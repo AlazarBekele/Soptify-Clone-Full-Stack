@@ -50,7 +50,7 @@
 
 
 
-<body style="padding-left: 360px;" class="BackgroundImg">
+<body style="padding-left: 250px;" class="BackgroundImg">
 
 
 
@@ -183,9 +183,11 @@
             <div class="d-inline-block CardBackground resonse">
 
 
+              {% for post_musics in post_music %}
+
               <div class="flexPosition">
 
-                <img class="thumbImg" src="https://th.bing.com/th/id/OIP.8ETLwF9HKx-88FSDhTLBmwHaHs?w=191&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                <img class="thumbImg" src="{{  }}" alt="">
 
 
                 <div class="">
@@ -205,6 +207,7 @@
 
               </div>
 
+              {% {% endfor %} %}
 
             </div>
 
