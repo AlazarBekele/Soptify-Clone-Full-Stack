@@ -17,6 +17,7 @@ urlpatterns = [
     path ('signup/', sign_up, name="signup"),
     path ('post/', post_page, name='post_page'),
     path ('payment/', payment, name="pay")
-] 
+]
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

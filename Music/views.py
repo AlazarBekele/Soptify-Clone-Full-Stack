@@ -78,7 +78,7 @@ def post_page (request):
     if postPage.is_valid():
 
       postPage.save()
-      postPage = postInput()
+      return redirect ('index')
 
   apply = Post_Music.objects.all()
 

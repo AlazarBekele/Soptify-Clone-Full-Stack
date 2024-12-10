@@ -108,20 +108,20 @@ class postInput (forms.ModelForm):
         widgets = {
             
             'artist' : forms.TextInput(attrs={
-                'class' : 'form-control bg-secondary text-light parkinsans',
+                'class' : 'form-control bg-secondary text-light poppins-bold',
                 'placeholder' : 'Name Artist'
             }),
             'Music_Title' : forms.TextInput(attrs={
-                'class' : 'form-control bg-secondary text-light parkinsans'
+                'class' : 'form-control bg-secondary text-light poppins-bold'
             }),
             'cover_picture' : forms.ClearableFileInput(attrs={
-                'class' : 'form-control bg-secondary text-light parkinsans',
+                'class' : 'form-control bg-secondary text-light poppins-bold',
                 'type' : 'file',
-                'id' : 'formFileMultiple'
+                'id' : 'formFileMultiple',
                 'accept' : 'image/*'
             }),
             'music' : forms.FileInput(attrs={
-                'class' : 'form-control bg-secondary text-light parkinsans',
+                'class' : 'form-control bg-secondary text-light poppins-bold',
                 'type' : 'file',
                 'id' : 'formFileMultiple',
                 'accept' : 'audio/*'
