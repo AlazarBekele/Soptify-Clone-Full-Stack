@@ -59,7 +59,7 @@ def sign_up (request):
 
       messages.success(request, 'Successfully Register !!')
       sign.save()
-      return redirect ('login_Page')
+      return redirect ('login')
     
 
   context = {
