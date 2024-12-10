@@ -31,15 +31,10 @@ class LogInput (UserCreationForm):
          'placeholder' : 'Enter Password1',
          'autocomplete': 'off'
       }))
-      password2 = forms.CharField( max_length=40, label='Confirm Password', widget=forms.PasswordInput(attrs={
-          'class' : 'form-control parkinsans',
-          'placeholder' : 'Confirm Password',
-          'autocomplete': 'off'
-      }))
       
       class Meta:
           model = User
-          fields = ('first_name', 'last_name', 'username', 'Email_Part', 'password1', 'password2')
+          fields = ('first_name', 'last_name', 'username', 'Email_Part', 'password1')
           
 
 
