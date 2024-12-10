@@ -118,10 +118,12 @@ class postInput (forms.ModelForm):
                 'class' : 'form-control bg-secondary text-light parkinsans',
                 'type' : 'file',
                 'id' : 'formFileMultiple'
+                'accept' : 'image/*'
             }),
             'music' : forms.FileInput(attrs={
                 'class' : 'form-control bg-secondary text-light parkinsans',
                 'type' : 'file',
-                'id' : 'formFileMultiple'
+                'id' : 'formFileMultiple',
+                'accept' : 'audio/*'
             }),
         }
