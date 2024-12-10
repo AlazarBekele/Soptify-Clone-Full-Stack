@@ -57,3 +57,8 @@ body {
 .SocialImg {
   width: 20px;
 }
+
+
+.VerticalLength {
+  height: 100vh;
+}
