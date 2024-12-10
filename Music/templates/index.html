@@ -150,7 +150,7 @@
     <div>
 
 
-      <div class="MainBody">
+      <div class="">
 
 
         <div class="ms-4 me-4">
@@ -180,32 +180,40 @@
 
 
 
-            <div class="d-inline-block CardBackground resonse">
+            <div class="d-flex align-items-center gap-4">
 
 
               {% for post_musics in post_music %}
 
-              <div class="flexPosition">
 
-                <img class="thumbImg" src="{{ post_musics.cover_picture }}" alt="">
+              <div class="d-inline-block">
 
 
-                <div class="">
+                <div class="flexPosition CardBackground">
+
+                  <img class="thumbImg" src="{{ post_musics.cover_picture }}" alt="">
   
-                  <h3 class="thumbText edu-au-vic-wa-nt-arrows pt-2 text-light">{{ post_musics.Music_Title }}</h3>
-                  <p class="thumbText roboto-light CardTextColor">{{ post_musics.artist }}</p>
+  
+                  <div class="">
     
+                    <h3 class="thumbText edu-au-vic-wa-nt-arrows pt-2 text-light">{{ post_musics.Music_Title }}</h3>
+                    <p class="thumbText roboto-light CardTextColor">{{ post_musics.artist }}</p>
+      
+                  </div>
+  
+  
+                  <div class="d-flex align-items-center">
+  
+                    <img class="playBtn" src="https://img.icons8.com/?size=100&id=80556&format=png&color=000000" alt="">
+  
+                  </div>
+  
+  
                 </div>
 
-
-                <div class="d-flex align-items-center">
-
-                  <img class="playBtn" src="https://img.icons8.com/?size=100&id=80556&format=png&color=000000" alt="">
-
-                </div>
-
-
+                
               </div>
+
 
               {% endfor %}
 
@@ -229,6 +237,12 @@
 
 
       <div class="Footer">
+
+        <div>
+
+
+
+        </div>
 
       </div>
 

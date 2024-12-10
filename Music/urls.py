@@ -1,6 +1,7 @@
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+
 from .views import (
   index,
   login_Page,
@@ -13,7 +14,7 @@ from .views import (
 urlpatterns = [
     path ('', index, name="index"),
     path ('login/', login_Page, name="login"),
-    path ('signup/', sign_up, name="sign_up"),
+    path ('signup/', sign_up, name="signup"),
     path ('post/', post_page, name='post_page'),
     path ('payment/', payment, name="pay")
 ] 
