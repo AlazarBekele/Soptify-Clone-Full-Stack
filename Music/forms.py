@@ -26,15 +26,20 @@ class LogInput (UserCreationForm):
          'placeholder' : 'Enter Email',
          'autocomplate' : 'off'
       }))
-      password1 = forms.CharField (max_length=40, label='password', widget = forms.PasswordInput(attrs={
+      password1 = forms.CharField (max_length=40, label='Password Confirm' , widget = forms.PasswordInput(attrs={
          'class' : 'form-control parkinsans',
          'placeholder' : 'Enter Password1',
          'autocomplete': 'off'
       }))
-      
+      password2 = forms.CharField (max_length=40, label='Password Confirm', widget = forms.PasswordInput(attrs={
+         'class' : 'form-control parkinsans',
+         'placeholder' : 'Enter Password1',
+         'autocomplete': 'off'
+      }))
+
       class Meta:
           model = User
-          fields = ('first_name', 'last_name', 'username', 'Email_Part', 'password1')
+          fields = ('first_name', 'last_name', 'username', 'Email_Part', 'password1', 'password2')
           
 
 
