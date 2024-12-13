@@ -10,6 +10,8 @@ from .models import Post_Music
 # Create your views here.
 
 
+
+
 @login_required (login_url='/login/')
 def index (request):
 
@@ -20,6 +22,7 @@ def index (request):
   }
 
   return render (request, 'index.html', context=context)
+
 
 
 
@@ -51,6 +54,8 @@ def login_Page (request):
 #   return redirect ('login_Page')
 
 
+
+
 def sign_up (request):
 
   sign = LogInput (request.POST or None)
@@ -67,6 +72,8 @@ def sign_up (request):
   }
 
   return render (request, 'Sign_up.html', context=context)
+
+
 
 
 @login_required (login_url='/login/')
@@ -88,6 +95,8 @@ def post_page (request):
   }
 
   return render (request, 'post_music.html', context=context)
+
+
 
 
 def payment (request):
