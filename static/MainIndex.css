@@ -145,7 +145,3 @@
 .Bigcover {
   width: 200px;
 }
-.bigContainer {
-  display: grid;
-  grid-template-columns: 230px 230px 230px 230px 230px;
-}

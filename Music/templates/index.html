@@ -144,7 +144,7 @@
   </div>
 
 
-  <div class="" style="">
+  <div class="">
 
 
     <div>
@@ -257,21 +257,21 @@
 
             </div>
 
-            <h2 class="text-light parkinsans mt-4">Your heavy rotation</h2>
+            <h2 class="text-light parkinsans mt-4 mb-2">Your heavy rotation</h2>
 
             {% for big_posts in big_post %}
 
-            <div class="d-inline-block">
+                <div class="d-inline-block ps-2">
 
-              <div class="bigContainer shadow mb-5 card bg-dark d-inline-block p-2">
-
-                <img class="Bigcover" src="{% static 'SpotifyCover/cover3.jpeg' %}">
-                <h3 class="text-light mb-0 mt-1">{{ big_posts.Music_Title }}</h3>
-                <p class="text-light mb-0">{{ big_posts.artist }}</p>
-
-              </div>
-
-            </div>
+                  <div class="shadow mb-5 card bg-dark p-2">
+    
+                    <img class="Bigcover" src="{% static 'SpotifyCover/cover3.jpeg' %}">
+                    <h3 class="text-light mb-0 mt-1">{{ big_posts.Music_Title }}</h3>
+                    <p class="text-light mb-0">{{ big_posts.artist }}</p>
+    
+                  </div>
+    
+                </div>
 
             {% endfor %}
 
