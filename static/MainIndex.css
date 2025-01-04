@@ -17,8 +17,14 @@
 
 
 .BackgroundImg {
-  background-color: rgb(29, 29, 29);
+  background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2514.jpg?t=st=1735986570~exp=1735990170~hmac=b37e1d460a1b91eaec7c776c5f0ffef57d1138021e0d95b831fb416c8080ccb9&w=1060);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
+
 
 
 .SideBar {
@@ -109,4 +115,26 @@
 .flexPosition:hover .playBtn {
   opacity: 1;
   transition: 0.3s;
+}
+
+.PostContainer {
+  display: grid;
+  grid-template-columns: 390px 390px 390px;
+  gap: 10px;
+}
+
+.back {
+  width: 30px;
+  transform: rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(0%) hue-rotate(40deg) brightness(103%) contrast(105%);
+}
+.forward {
+  width: 30px;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(0%) hue-rotate(40deg) brightness(103%) contrast(105%);
+}
+.bcakcontainer {
+  padding: 8px 8px 8px 8px;
+  background-color: rgb(26, 26, 26);
+  display: inline-block;
+  border-radius: 50%;
 }
