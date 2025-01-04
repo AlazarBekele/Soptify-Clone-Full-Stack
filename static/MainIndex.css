@@ -138,3 +138,6 @@
   display: inline-block;
   border-radius: 50%;
 }
+.MainBack {
+  opacity: 70%;
+}
