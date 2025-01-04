@@ -15,10 +15,12 @@ from .models import Post_Music
 @login_required (login_url='/login/')
 def index (request):
 
-  post_music = Post_Music.objects.all()
+  post_music = Post_Music.objects.filter().order_by('artist')[:3]
+  big_post = Post_Music.objects.filter().order_by('Music_Title')[:5]
 
   context = {
-    'post_music' : post_music
+    'post_music' : post_music,
+    'big_post' : big_post
   }
 
   return render (request, 'index.html', context=context)
